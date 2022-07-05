@@ -11,12 +11,7 @@ class NewsList {
         const url = `https://newsapi.org/v2/top-headlines?country=kr&category=${$category === 'all' ? '' : $category}&page=${$page}&pageSize=${$pageSize}&apiKey=${apiKey}`
         let response;
         try {
-            response = await axios.get(url, {
-                // headers: {
-                //     "Upgrade": "HTTP/2.0",
-                //     "Connection": "Upgrade"
-                // }
-            });
+            response = await axios.get(url);
             console.log(response.data.articles);
             response.data.articles.forEach(article => {
                 newslist.innerHTML += `<section class="news-item">
