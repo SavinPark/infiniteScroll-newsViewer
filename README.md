@@ -28,6 +28,7 @@
 🌐 News API
 
 * [News API](https://newsapi.org/)
+* 참고 : News API 정책 변경으로 무료 apikey는 localhost에서만 작동합니다.
 
 <br/>
 
