@@ -34,7 +34,7 @@
 
 🔎 Demo
 
-* [News Viewer]()
+* [News Viewer](https://savinpark.github.io/infiniteScroll-newsViewer/)
 
 <br/>
 <br/>
