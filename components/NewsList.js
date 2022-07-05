@@ -13,8 +13,10 @@ class NewsList {
         try {
             response = await axios.get(url, {
                 headers: {
-                    Upgrade: HTTP / 3,
-                    Connection: Upgrade
+                    "Upgrade": "HTTP/2.0",
+                    "Connection": "Upgrade",
+                    "Content-Length": 53,
+                    "Content-Type": "text/plain",
                 }
             });
             console.log(response.data.articles);
