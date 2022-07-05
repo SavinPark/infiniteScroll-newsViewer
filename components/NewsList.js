@@ -12,10 +12,10 @@ class NewsList {
         let response;
         try {
             response = await axios.get(url, {
-                headers: {
-                    "Upgrade": "HTTP/2.0",
-                    "Connection": "Upgrade"
-                }
+                // headers: {
+                //     "Upgrade": "HTTP/2.0",
+                //     "Connection": "Upgrade"
+                // }
             });
             console.log(response.data.articles);
             response.data.articles.forEach(article => {
