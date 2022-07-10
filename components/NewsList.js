@@ -12,6 +12,13 @@ class NewsList {
         let response;
         try {
             response = await axios.get(url);
+            if (response.data.articles.length === 0) {
+                const newsListContainer = document.querySelector('.news-list-container');
+                const scrollObserver = document.querySelector('.scroll-observer');
+                newsListContainer.removeChild(scrollObserver)
+                return
+            }
+            this.totalResults = response.data.totalResults;
             console.log(response.data.articles);
             response.data.articles.forEach(article => {
                 newslist.innerHTML += `<section class="news-item">

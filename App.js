@@ -47,5 +47,5 @@ function scrollObserver() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    scrollObserver();
+  scrollObserver();
 });
